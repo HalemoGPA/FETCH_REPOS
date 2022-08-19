@@ -1,0 +1,279 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+:root {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #fff;
+  background-image: linear-gradient(90deg, rgb(14, 39, 201), #00cebd);
+  background-size: cover;
+}
+
+.page {
+  margin: 100px auto 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.page .container {
+  margin: auto;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 20px;
+  margin-bottom: 100px;
+}
+
+@media (max-width: 768px) {
+  .page .container {
+    width: 70%;
+  }
+}
+
+@media (min-width: 768px) {
+  .page .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .page .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .page .container {
+    width: 1170px;
+  }
+}
+
+.page .container .client-input {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+
+}
+
+.page .container .client-input .input {
+  width: 75%;
+  height: 40px;
+  border-radius: 20px;
+  border: 2px solid rgb(68, 177, 255);
+  padding: 0 10px;
+  outline: none;
+  font-size: 16px;
+  text-indent: 5px;
+  opacity: .95;
+  caret-color: #0369b3;
+  color: #004b80;
+}
+
+.page .container .client-input .input:focus {
+  border: 3px solid rgb(0, 149, 255);
+
+}
+
+
+
+
+.page .container .client-input .button {
+  width: 20%;
+  height: 40px;
+  border-radius: 20px;
+  outline: none;
+  border: 2px solid rgb(68, 177, 255);
+  background-color: white;
+  color: rgb(68, 177, 255);
+  cursor: pointer;
+}
+
+.page .container .client-input .button:hover {
+  background-color: rgb(68, 177, 255);
+  color: white;
+}
+
+.page .container hr {
+  margin-top: 30px;
+  background-color: rgb(91, 186, 255);
+  height: 2px;
+  border: none;
+  border-radius: 10px;
+}
+
+.page .container .repos {
+  width: 100%;
+  min-height: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 10px;
+
+}
+
+
+
+.page .container .repos>div {
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #ffffff;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  color: rgb(68, 177, 255);
+  font-size: 16px;
+  width: 80%;
+  border-bottom: 5px solid #004b80;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 210px;
+  position: relative;
+  overflow: hidden;
+}
+
+.page .container .repos>div .title {
+  font-size: 25px;
+  font-weight: bold;
+  color: #004b80;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  cursor: context-menu;
+  word-break: keep-all;
+  word-wrap: normal;
+  text-overflow: clip;
+  white-space: nowrap;
+
+}
+
+
+.page .container .repos>div .visit {
+  background-color: #00cebd;
+  color: white;
+  border-radius: 10px;
+  padding: 5px 20px;
+  margin-top: 25px;
+}
+
+.page .container .repos>div .stars {
+  background-color: #000000;
+  color: white;
+  border-radius: 10px;
+  padding: 5px 20px;
+  position: relative;
+  cursor: context-menu;
+}
+
+.page .container .repos>div .stars::before {
+  content: "⭐";
+  position: absolute;
+  left: 10px;
+  font-size: 16px;
+}
+
+.page .container .repos>div .download {
+  background-color: #00ce45;
+  color: white;
+  border-radius: 10px;
+  padding: 5px 20px;
+  position: relative;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:767px) {
+
+  .page .container .repos>div {
+    width: 100%;
+    min-height: 210px;
+  }
+
+  .page .container .repos>div>.title {
+    font-size: 18px;
+  }
+
+}
+
+@media (max-width:360px) {
+  .page .container .repos>div>.title {
+    font-size: 15px;
+  }
+}
+
+@media (max-width:320px) {
+  .page .container .repos>div>.title {
+    font-size: 11px;
+  }
+
+  .page .container .repos>div>.stars::before {
+    font-size: 10px;
+  }
+
+  .page .container .repos>div {
+    width: 90%;
+    font-size: 10px;
+    min-height: 160px;
+  }
+
+  .page .container .repos {
+    width: 100%;
+    font-size: 12px;
+  }
+
+
+}
+
+
+
+@media (min-width:768px) {
+  .page .container .repos>div {
+    width: 40%;
+  }
+
+}
+
+@media (min-width:992px) {
+  .page .container .repos>div {
+    width: 30%;
+  }
+
+}
