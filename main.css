@@ -27,6 +27,9 @@ body {
   background-size: cover;
 }
 
+
+
+
 .page {
   margin: 100px auto 0;
   display: flex;
@@ -108,11 +111,13 @@ body {
   background-color: white;
   color: rgb(68, 177, 255);
   cursor: pointer;
+  transition: .2s;
 }
 
 .page .container .client-input .button:hover {
   background-color: rgb(68, 177, 255);
   color: white;
+
 }
 
 .page .container hr {
@@ -369,4 +374,30 @@ body {
 .footer span {
   color: #00cebd;
   font-weight: bold;
+}
+
+
+::-webkit-scrollbar {
+  width: 15px;
+
+}
+
+::-webkit-scrollbar-track {
+  position: absolute;
+  background: #00cebd;
+
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#0c6fb6, rgb(0, 127, 254));
+  border-radius: 10vw;
+  border: .2em solid #00cebd;
+
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background: black;
+
 }
