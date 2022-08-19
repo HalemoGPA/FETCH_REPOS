@@ -50,7 +50,7 @@ getRepos = () => {
             download.classList.add("download");
             download.setAttribute(
               "href",
-              `https://github.com/${userInput.value}/${repo.name}/archive/refs/heads/${default_branch}.zip`
+              `https://github.com/${userInput.value}/${repo.name}/archive/refs/heads/${repo.default_branch}.zip`
             );
             let downloadText = document.createTextNode("Download");
             download.append(downloadText);
