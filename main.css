@@ -151,7 +151,7 @@ body {
   text-align: center;
   justify-content: center;
   gap: 10px;
-  min-height: 210px;
+  min-height: 220px;
   position: relative;
   overflow: hidden;
 }
@@ -207,6 +207,20 @@ body {
 
 }
 
+.page .container .repos>div .demo {
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 12px;
+  cursor: pointer;
+  font-weight: 500;
+  background-color: #00cebd;
+  border-radius: 10px;
+  padding: 2px 10px;
+}
+
 
 
 
@@ -224,7 +238,7 @@ body {
 
   .page .container .repos>div {
     width: 100%;
-    min-height: 210px;
+    min-height: 220px;
   }
 
   .page .container .repos>div>.title {
@@ -259,7 +273,11 @@ body {
     font-size: 12px;
   }
 
-
+  .page .container .repos>div>.demo {
+    font-size: 8px;
+    bottom: 1px;
+    padding: 1px 5px;
+  }
 }
 
 

@@ -56,6 +56,19 @@ getRepos = () => {
             download.append(downloadText);
             div.append(download);
           }
+          if (repo.has_pages) {
+            let demo = document.createElement("a");
+            demo.setAttribute(
+              "href",
+              `https://${repo.owner.login.toLowerCase()}.github.io/${repo.name}`
+            );
+            demo.setAttribute("target", "_blank");
+            demo.classList.add("demo");
+            let demotext = document.createTextNode("View Demo");
+            demo.append(demotext);
+            div.append(demo);
+          }
+
           reposResult.append(div);
         });
       });
